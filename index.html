@@ -1,19 +1,197 @@
-<!DOCTYPE html><html lang="zh-Hant"><head><meta charset="UTF-8">
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>常明燈 隱私政策 Privacy Policy</title>
-<style>body{font-family:-apple-system,"PingFang TC","Hiragino Sans GB",sans-serif;max-width:720px;margin:40px auto;padding:0 20px;line-height:1.85;color:#2A211B;background:#F6EFDE}h1{letter-spacing:4px}h2{color:#8B6841;margin-top:1.6em}a{color:#8B6841}</style></head><body>
-<h1>常明燈 · 隱私政策</h1>
-<p>最後更新：2026 年 6 月</p>
-<p>常明燈（Lasting Lamp）是一款純公益、完全免費的臨終助念念佛 App。我們極度重視您的隱私。</p>
-<h2>我們不收集任何資料</h2>
-<p>本 App <strong>不收集、不上傳、不分享</strong>任何個人資料。沒有帳號、沒有廣告、沒有分析統計、沒有第三方追蹤。</p>
-<h2>完全離線運作</h2>
-<p>所有念佛音聲與經文皆內建於 App 中，無需網路即可使用。您所設定的紀念對象姓名、照片等資訊，<strong>僅保存於您的裝置本機</strong>，永不離開您的手機。</p>
-<h2>照片權限</h2>
-<p>若您選擇為紀念對象設定照片，App 會請求讀取相簿。所選照片僅複製一份保存於本機 App 沙盒內供顯示之用，不會上傳至任何伺服器。</p>
-<h2>音聲說明</h2>
-<p>念佛音聲（南無阿彌陀佛、阿彌陀佛）為 AI 語音合成（MiniMax），發音依淨土宗傳統校正。心經為公共領域（CC0）真人錄音，法器音效採用創用 CC 授權素材。</p>
-<h2>聯絡我們</h2>
-<p>如有任何疑問，請來信：<a href="mailto:gijirokuman@gmail.com">gijirokuman@gmail.com</a></p>
-<hr><p style="color:#8B7E6E">本 App 不隸屬於任何寺院或教派，不宣稱任何宗教功效，亦不替代專業臨終關懷。</p>
-</body></html>
+<title>臨終助念念佛 App｜常明燈 Lasting Lamp · 免費無廣告 · 完全離線</title>
+<meta name="description" content="常明燈是純公益、完全免費的臨終助念念佛 App：佛號與《心經》直式排版逐字亮起，連續助念 8 小時，防誤觸鎖定，木魚、引磬等法器音，完全離線、無廣告、不收集任何資料。即將上架 App Store，歡迎先了解功能與隱私承諾。">
+<meta name="robots" content="index,follow">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="常明燈 Lasting Lamp">
+<meta property="og:title" content="臨終助念念佛 App｜常明燈 Lasting Lamp">
+<meta property="og:description" content="純公益、完全免費、無廣告、完全離線的臨終助念念佛 App。經文逐字亮起，連續助念 8 小時，一切資料僅存於本機。">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:url" content="https://jaydencj.github.io/changminglamp-site/">
+<meta property="og:image" content="https://jaydencj.github.io/changminglamp-site/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="常明燈 Lasting Lamp 品牌圖：油燈燈焰標誌">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#F6EFDE" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1C1712" media="(prefers-color-scheme: dark)">
+<link rel="canonical" href="https://jaydencj.github.io/changminglamp-site/">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="site.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MobileApplication",
+  "name": "常明燈",
+  "alternateName": "Lasting Lamp",
+  "applicationCategory": "LifestyleApplication",
+  "operatingSystem": "iOS",
+  "url": "https://jaydencj.github.io/changminglamp-site/",
+  "description": "純公益、完全免費的臨終助念念佛 App。南無阿彌陀佛、阿彌陀佛兩種佛號，以及《心經》，直式排版逐字亮起，連續播放最長 8 小時，完全離線運作，不收集任何資料。",
+  "inLanguage": ["zh-Hant", "zh-Hans"],
+  "isAccessibleForFree": true,
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "TWD" }
+}
+</script>
+<style>
+.hero{text-align:center;padding:64px 0 48px}
+.lamp{position:relative;width:96px;height:96px;margin:0 auto 20px}
+.lamp::before{
+  content:"";position:absolute;inset:-28px;border-radius:50%;
+  background:radial-gradient(circle,var(--glow) 0%,transparent 68%);
+  animation:glow 4.5s ease-in-out infinite;
+}
+@keyframes glow{0%,100%{opacity:.75;transform:scale(1)}50%{opacity:1;transform:scale(1.07)}}
+.lamp svg{position:relative;width:96px;height:96px}
+.hero h1{font-size:clamp(2.1rem,6vw,3rem);letter-spacing:10px;margin:.2em 0 .1em;text-indent:10px}
+.hero .en{color:var(--muted);letter-spacing:4px;font-size:1rem;margin:0}
+.hero .tagline{font-size:clamp(1.05rem,3vw,1.25rem);margin:1.2em auto .8em;max-width:34em;text-wrap:balance}
+.hero .store-note{color:var(--muted);font-size:.95rem;letter-spacing:1px;margin:1.6em 0 0}
+@media (max-width:640px){.br-wide{display:none}}
+.pills{display:flex;justify-content:center;flex-wrap:wrap;gap:10px;padding:0;margin:1.4em 0 0;list-style:none}
+.pills li{
+  border:1px solid var(--line);background:var(--bg-soft);color:var(--accent);
+  padding:6px 16px;border-radius:999px;font-size:.92rem;letter-spacing:1px;
+}
+section{padding:40px 0}
+section h2{
+  text-align:center;color:var(--accent);letter-spacing:6px;font-size:1.5rem;
+  margin:0 0 1.4em;text-indent:6px;
+}
+.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;padding:0;margin:0;list-style:none}
+.features li{
+  background:var(--bg-soft);border:1px solid var(--line);border-radius:14px;
+  padding:22px 20px;transition:transform .25s ease,box-shadow .25s ease;
+}
+@media (hover:hover) and (pointer:fine){
+  .features li:hover{transform:translateY(-3px);box-shadow:0 8px 24px var(--shadow)}
+}
+.features h3{margin:0 0 .4em;font-size:1.08rem;letter-spacing:2px;color:var(--ink)}
+.features p{margin:0;color:var(--muted);font-size:.95rem}
+.promise{
+  background:var(--bg-soft);border:1px solid var(--line);border-radius:18px;
+  padding:34px 28px;text-align:center;
+}
+.promise p{max-width:36em;margin:.6em auto}
+.promise .big{font-size:1.15rem;text-wrap:balance}
+.nb{white-space:nowrap}
+.actions{display:flex;justify-content:center;flex-wrap:wrap;gap:14px;margin-top:1.6em}
+@media (max-width:640px){.actions .btn{flex:1 1 100%;max-width:20em}}
+/* 320px 級窄屏：收緊字距與橫向內距，讓「查看說明與常見問題」維持單行 */
+@media (max-width:360px){.actions .btn{letter-spacing:1px;padding-inline:16px}}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;min-height:48px;
+  padding:10px 28px;border-radius:10px;text-decoration:none;letter-spacing:2px;
+  border:1px solid var(--accent);transition:background .2s ease,color .2s ease,border-color .2s ease;
+  -webkit-tap-highlight-color:transparent;
+}
+.btn.primary{background:var(--accent);color:var(--bg)}
+.btn.primary:hover,.btn.primary:active{background:var(--btn-hover);border-color:var(--btn-hover)}
+.btn.ghost{color:var(--accent)}
+.btn.ghost:hover,.btn.ghost:active{background:var(--bg-soft)}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">跳至主要內容</a>
+<header class="site">
+  <div class="wrap site-bar">
+    <a class="brand" href="./">
+      <svg viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+        <path d="M32 8c7.6 9.2 11.4 15.3 11.4 21.4 0 6.9-5.1 11.9-11.4 11.9s-11.4-5-11.4-11.9C20.6 23.3 24.4 17.2 32 8z" fill="var(--flame)"/>
+        <path d="M32 19c3.7 4.6 5.6 7.6 5.6 10.7 0 3.5-2.5 6-5.6 6s-5.6-2.5-5.6-6c0-3.1 1.9-6.1 5.6-10.7z" fill="var(--bg)"/>
+        <path d="M16 46h32c-1.3 5.9-7.6 9.8-16 9.8S17.3 51.9 16 46z" fill="var(--accent)"/>
+      </svg>
+      常明燈
+    </a>
+    <nav class="site-nav" aria-label="網站導覽">
+      <a href="./" aria-current="page">首頁</a>
+      <a href="support.html">支援</a>
+      <a href="privacy.html">隱私政策</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <div class="wrap">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="lamp" aria-hidden="true">
+        <svg viewBox="0 0 64 64" focusable="false">
+          <path d="M32 6c8.4 10 12.6 16.8 12.6 23.5 0 7.6-5.6 13.1-12.6 13.1s-12.6-5.5-12.6-13.1C19.4 22.8 23.6 16 32 6z" fill="var(--flame)"/>
+          <path d="M32 18.5c4 5 6.1 8.4 6.1 11.8 0 3.8-2.7 6.6-6.1 6.6s-6.1-2.8-6.1-6.6c0-3.4 2.1-6.8 6.1-11.8z" fill="var(--bg)"/>
+          <path d="M14.5 47h35c-1.5 6.5-8.4 10.7-17.5 10.7S16 53.5 14.5 47z" fill="var(--accent)"/>
+        </svg>
+      </div>
+      <h1 id="hero-title">常明燈</h1>
+      <p class="en">Lasting Lamp</p>
+      <p class="tagline">臨終助念念佛 App。願一盞常明之燈，<br class="br-wide">伴摯愛之人安詳往生，也伴守候的家人安心相送。</p>
+      <!-- [html-validate-disable-next no-redundant-role -- Safari/VoiceOver 對 list-style:none 的清單會移除列表語義，須以 role="list" 顯式保留] -->
+      <ul class="pills" role="list">
+        <li>純公益</li>
+        <li>完全免費</li>
+        <li>無廣告 · 無內購</li>
+        <li>完全離線</li>
+        <li>不收集任何資料</li>
+      </ul>
+      <p class="store-note">即將上架 App Store，上架後即可免費下載</p>
+    </section>
+
+    <section aria-labelledby="features-title">
+      <h2 id="features-title">功能</h2>
+      <!-- [html-validate-disable-next no-redundant-role -- Safari/VoiceOver 對 list-style:none 的清單會移除列表語義，須以 role="list" 顯式保留] -->
+      <ul class="features" role="list">
+        <li>
+          <h3>佛號與《心經》</h3>
+          <p>南無阿彌陀佛、阿彌陀佛兩種佛號，以及《心經》，介面支援繁體與簡體。</p>
+        </li>
+        <li>
+          <h3>逐字隨誦亮起</h3>
+          <p>直式經文排版，佛號逐字隨誦亮起，眼到、耳到、心到。</p>
+        </li>
+        <li>
+          <h3>連續助念 8 小時</h3>
+          <p>可設定誦念時間，連續播放最長 8 小時不間斷。</p>
+        </li>
+        <li>
+          <h3>防誤觸鎖定</h3>
+          <p>安心將手機放於枕邊，長按 3 秒即可解除鎖定。</p>
+        </li>
+        <li>
+          <h3>法器背景音</h3>
+          <p>木魚、引磬、鐘等法器音效，可自由疊加於佛號之上。</p>
+        </li>
+        <li>
+          <h3>紀念摯愛</h3>
+          <p>可為摯愛之人輸入姓名、設定照片，一切僅保存於您的裝置。</p>
+        </li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="privacy-title">
+      <h2 id="privacy-title">隱私承諾</h2>
+      <div class="promise">
+        <p class="big"><strong>不收集、不上傳、<span class="nb">不分享</span></strong>任何個人資料。</p>
+        <p>沒有帳號、沒有廣告、沒有分析統計、沒有第三方追蹤。所有音聲與經文皆內建於 App 中，無需網路即可使用；您設定的姓名與照片永不離開您的手機。</p>
+        <div class="actions">
+          <a class="btn primary" href="support.html">查看說明與常見問題</a>
+          <a class="btn ghost" href="privacy.html">閱讀完整隱私政策</a>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <p>如有任何疑問，請來信：<a href="mailto:gijirokuman@gmail.com">gijirokuman@gmail.com</a></p>
+    <p>本 App 不隸屬於任何寺院或教派，不宣稱任何宗教功效，亦不替代專業臨終關懷。</p>
+    <p>常明燈 Lasting Lamp · 純公益免費</p>
+  </div>
+</footer>
+</body>
+</html>
