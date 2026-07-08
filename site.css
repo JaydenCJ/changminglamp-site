@@ -23,6 +23,7 @@ body{
   -webkit-font-smoothing:antialiased;
 }
 h1,h2,h3{font-family:"Songti TC","Noto Serif TC","Source Han Serif TC",serif;line-height:1.4}
+p,li,dd{text-wrap:pretty}
 a{color:var(--accent)}
 a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
 .skip-link{
@@ -32,10 +33,10 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
 .skip-link:focus{left:0}
 .wrap{max-width:880px;margin:0 auto;padding:0 20px}
 header.site{border-bottom:1px solid var(--line)}
-.site-bar{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;padding:14px 0}
+.site-bar{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;padding-block:14px}
 .brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);font-weight:600;letter-spacing:2px;min-height:44px}
 .brand svg{width:26px;height:26px;flex:none}
-nav.site-nav{display:flex;gap:4px;flex-wrap:wrap}
+nav.site-nav{display:flex;gap:4px;flex-wrap:wrap;margin-right:-14px}
 nav.site-nav a{
   text-decoration:none;color:var(--accent);padding:10px 14px;border-radius:8px;min-height:44px;
   display:inline-flex;align-items:center;-webkit-tap-highlight-color:transparent;
@@ -43,5 +44,5 @@ nav.site-nav a{
 nav.site-nav a:hover,nav.site-nav a:active{background:var(--bg-soft);text-decoration:underline}
 nav.site-nav a[aria-current="page"]{color:var(--ink);font-weight:600}
 footer.site{border-top:1px solid var(--line);margin-top:48px;padding:28px 0 36px;text-align:center;color:var(--muted);font-size:.92rem}
-footer.site p{margin:.4em 0}
+footer.site p{margin:.4em 0;text-wrap:balance}
 footer.site a{color:var(--accent)}

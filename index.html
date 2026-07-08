@@ -46,7 +46,7 @@
 .lamp svg{position:relative;width:96px;height:96px}
 .hero h1{font-size:clamp(2.1rem,6vw,3rem);letter-spacing:10px;margin:.2em 0 .1em;text-indent:10px}
 .hero .en{color:var(--muted);letter-spacing:4px;font-size:1rem;margin:0}
-.hero .tagline{font-size:clamp(1.05rem,3vw,1.25rem);margin:1.2em auto .8em;max-width:34em}
+.hero .tagline{font-size:clamp(1.05rem,3vw,1.25rem);margin:1.2em auto .8em;max-width:34em;text-wrap:balance}
 .hero .store-note{color:var(--muted);font-size:.95rem;letter-spacing:1px;margin:1.6em 0 0}
 @media (max-width:640px){.br-wide{display:none}}
 .pills{display:flex;justify-content:center;flex-wrap:wrap;gap:10px;padding:0;margin:1.4em 0 0;list-style:none}
@@ -74,8 +74,9 @@ section h2{
   padding:34px 28px;text-align:center;
 }
 .promise p{max-width:36em;margin:.6em auto}
-.promise .big{font-size:1.15rem}
+.promise .big{font-size:1.15rem;text-wrap:balance}
 .actions{display:flex;justify-content:center;flex-wrap:wrap;gap:14px;margin-top:1.6em}
+@media (max-width:640px){.actions .btn{flex:1 1 100%;max-width:20em}}
 .btn{
   display:inline-flex;align-items:center;justify-content:center;min-height:48px;
   padding:10px 28px;border-radius:10px;text-decoration:none;letter-spacing:2px;
@@ -120,7 +121,7 @@ section h2{
       </div>
       <h1 id="hero-title">常明燈</h1>
       <p class="en">Lasting Lamp</p>
-      <p class="tagline">臨終助念念佛 App。願一盞常明之燈，伴摯愛之人安詳往生，<br class="br-wide">也伴守候的家人安心相送。</p>
+      <p class="tagline">臨終助念念佛 App。願一盞常明之燈，<br class="br-wide">伴摯愛之人安詳往生，也伴守候的家人安心相送。</p>
       <ul class="pills">
         <li>純公益</li>
         <li>完全免費</li>

@@ -12,11 +12,11 @@
 <link rel="apple-touch-icon" href="/changminglamp-site/apple-touch-icon.png">
 <style>
 :root{
-  --bg:#F6EFDE; --ink:#2A211B; --muted:#6F6353; --accent:#7A5A38; --flame:#C08A3E;
+  --bg:#F6EFDE; --bg-soft:#FDF8EC; --ink:#2A211B; --muted:#6F6353; --accent:#7A5A38; --flame:#C08A3E;
   color-scheme:light dark;
 }
 @media (prefers-color-scheme: dark){
-  :root{--bg:#1C1712; --ink:#EDE4D3; --muted:#A99A85; --accent:#D9B27C; --flame:#E0B15E}
+  :root{--bg:#1C1712; --bg-soft:#26201A; --ink:#EDE4D3; --muted:#A99A85; --accent:#D9B27C; --flame:#E0B15E}
 }
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
@@ -27,8 +27,15 @@ body{
 }
 h1{font-family:"Songti TC","Noto Serif TC","Source Han Serif TC",serif;letter-spacing:6px;text-indent:6px;font-size:1.7rem;margin:.8em 0 .3em}
 p{color:var(--muted);margin:.3em 0}
+.brand-line{letter-spacing:2px;font-size:.9rem;margin:.9em 0 0}
 a{color:var(--accent)}
 a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.home-btn{
+  display:inline-flex;align-items:center;justify-content:center;min-height:48px;
+  margin-top:1em;padding:10px 28px;border:1px solid var(--accent);border-radius:10px;
+  color:var(--accent);text-decoration:none;letter-spacing:2px;-webkit-tap-highlight-color:transparent;
+}
+.home-btn:hover,.home-btn:active{background:var(--bg-soft)}
 svg{width:72px;height:72px}
 </style>
 </head>
@@ -39,9 +46,10 @@ svg{width:72px;height:72px}
     <path d="M32 18.5c4 5 6.1 8.4 6.1 11.8 0 3.8-2.7 6.6-6.1 6.6s-6.1-2.8-6.1-6.6c0-3.4 2.1-6.8 6.1-11.8z" fill="var(--bg)"/>
     <path d="M14.5 47h35c-1.5 6.5-8.4 10.7-17.5 10.7S16 53.5 14.5 47z" fill="var(--accent)"/>
   </svg>
+  <p class="brand-line">常明燈 Lasting Lamp</p>
   <h1>找不到頁面</h1>
   <p>您要找的頁面不存在或已移動。</p>
-  <p><a href="/changminglamp-site/">回到首頁</a></p>
+  <p><a class="home-btn" href="/changminglamp-site/">回到首頁</a></p>
 </main>
 </body>
 </html>
