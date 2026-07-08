@@ -1,0 +1,36 @@
+name: 網站品質檢查
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  validate:
+    name: HTML 驗證與內部連結
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: HTML 驗證（html-validate）
+        run: npx --yes html-validate@11 index.html support.html privacy.html 404.html
+      - name: 內部連結檢查
+        run: node .github/scripts/check-links.mjs
+
+  smoke:
+    name: 渲染冒煙（明暗配色 × 320/390px）
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: 安裝 Playwright 與 Chromium
+        run: |
+          npm install --no-save @playwright/test@1
+          npx playwright install --with-deps chromium
+      - name: 執行渲染冒煙測試
+        run: npx playwright test --config .github/tests/playwright.config.mjs
