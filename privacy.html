@@ -11,55 +11,17 @@
 <meta property="og:description" content="不收集、不上傳、不分享任何個人資料。無帳號、無廣告、無追蹤，完全離線運作。">
 <meta property="og:locale" content="zh_TW">
 <meta name="twitter:card" content="summary">
+<meta name="color-scheme" content="light dark">
 <meta name="theme-color" content="#F6EFDE" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#1C1712" media="(prefers-color-scheme: dark)">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="stylesheet" href="site.css">
 <style>
-:root{
-  --bg:#F6EFDE; --bg-soft:#FDF8EC; --ink:#2A211B; --muted:#6F6353;
-  --accent:#7A5A38; --flame:#C08A3E; --line:#E4D8BF;
-}
-@media (prefers-color-scheme: dark){
-  :root{
-    --bg:#1C1712; --bg-soft:#26201A; --ink:#EDE4D3; --muted:#A99A85;
-    --accent:#D9B27C; --flame:#E0B15E; --line:#3A3126;
-  }
-}
-*{box-sizing:border-box}
-@media (prefers-reduced-motion: reduce){
-  *,*::before,*::after{animation:none!important;transition:none!important}
-}
-body{
-  margin:0;background:var(--bg);color:var(--ink);line-height:1.85;
-  font-family:-apple-system,BlinkMacSystemFont,"PingFang TC","Microsoft JhengHei","Hiragino Sans GB",sans-serif;
-  -webkit-font-smoothing:antialiased;
-}
-h1,h2{font-family:"Songti TC","Noto Serif TC","Source Han Serif TC",serif;line-height:1.4}
 h1{letter-spacing:4px;font-size:1.9rem;margin:1.4em 0 .4em}
 h2{color:var(--accent);letter-spacing:2px;margin-top:1.8em;font-size:1.3rem}
-a{color:var(--accent)}
-a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
-.skip-link{
-  position:absolute;left:-9999px;top:0;background:var(--bg-soft);color:var(--ink);
-  padding:.6em 1em;z-index:10;border-radius:0 0 8px 0;
-}
-.skip-link:focus{left:0}
-.wrap{max-width:720px;margin:0 auto;padding:0 20px}
-header.site{border-bottom:1px solid var(--line)}
-.site-bar{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;padding:14px 0}
-.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);font-weight:600;letter-spacing:2px}
-.brand svg{width:26px;height:26px;flex:none}
-nav.site-nav{display:flex;gap:4px;flex-wrap:wrap}
-nav.site-nav a{
-  text-decoration:none;color:var(--accent);padding:10px 14px;border-radius:8px;min-height:44px;
-  display:inline-flex;align-items:center;
-}
-nav.site-nav a:hover{background:var(--bg-soft);text-decoration:underline}
-nav.site-nav a[aria-current="page"]{color:var(--ink);font-weight:600}
 main{padding-bottom:24px}
+main.wrap{max-width:720px}
 .updated{color:var(--muted)}
-footer.site{border-top:1px solid var(--line);margin-top:48px;padding:28px 0 36px;text-align:center;color:var(--muted);font-size:.92rem}
-footer.site p{margin:.4em 0}
 </style>
 </head>
 <body>
