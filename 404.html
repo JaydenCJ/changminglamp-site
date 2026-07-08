@@ -5,25 +5,29 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>找不到頁面｜常明燈 Lasting Lamp</title>
 <meta name="robots" content="noindex">
+<meta name="color-scheme" content="light dark">
 <meta name="theme-color" content="#F6EFDE" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#1C1712" media="(prefers-color-scheme: dark)">
-<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/svg+xml" href="/changminglamp-site/favicon.svg">
 <style>
 :root{
   --bg:#F6EFDE; --ink:#2A211B; --muted:#6F6353; --accent:#7A5A38; --flame:#C08A3E;
+  color-scheme:light dark;
 }
 @media (prefers-color-scheme: dark){
   :root{--bg:#1C1712; --ink:#EDE4D3; --muted:#A99A85; --accent:#D9B27C; --flame:#E0B15E}
 }
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
 body{
-  margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;
+  margin:0;min-height:100vh;min-height:100svh;display:flex;align-items:center;justify-content:center;
   background:var(--bg);color:var(--ink);line-height:1.85;text-align:center;padding:24px;
   font-family:-apple-system,BlinkMacSystemFont,"PingFang TC","Microsoft JhengHei","Hiragino Sans GB",sans-serif;
 }
-h1{font-family:"Songti TC","Noto Serif TC",serif;letter-spacing:6px;font-size:1.7rem;margin:.8em 0 .3em}
+h1{font-family:"Songti TC","Noto Serif TC","Source Han Serif TC",serif;letter-spacing:6px;text-indent:6px;font-size:1.7rem;margin:.8em 0 .3em}
 p{color:var(--muted);margin:.3em 0}
 a{color:var(--accent)}
-a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
 svg{width:72px;height:72px}
 </style>
 </head>
@@ -36,7 +40,7 @@ svg{width:72px;height:72px}
   </svg>
   <h1>找不到頁面</h1>
   <p>您要找的頁面不存在或已移動。</p>
-  <p><a href="/">回到首頁</a></p>
+  <p><a href="/changminglamp-site/">回到首頁</a></p>
 </main>
 </body>
 </html>
