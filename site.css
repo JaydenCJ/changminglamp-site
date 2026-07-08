@@ -36,6 +36,7 @@ header.site{border-bottom:1px solid var(--line)}
 .site-bar{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;padding-block:14px}
 .brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);font-weight:600;letter-spacing:2px;min-height:44px}
 .brand svg{width:26px;height:26px;flex:none}
+/* margin-right:-14px 用於抵銷末個連結的水平內距，需與下方 nav.site-nav a 的 padding:10px 14px 保持一致 */
 nav.site-nav{display:flex;gap:4px;flex-wrap:wrap;margin-right:-14px}
 nav.site-nav a{
   text-decoration:none;color:var(--accent);padding:10px 14px;border-radius:8px;min-height:44px;
