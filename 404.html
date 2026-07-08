@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>找不到頁面｜常明燈 Lasting Lamp</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#F6EFDE" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1C1712" media="(prefers-color-scheme: dark)">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<style>
+:root{
+  --bg:#F6EFDE; --ink:#2A211B; --muted:#6F6353; --accent:#7A5A38; --flame:#C08A3E;
+}
+@media (prefers-color-scheme: dark){
+  :root{--bg:#1C1712; --ink:#EDE4D3; --muted:#A99A85; --accent:#D9B27C; --flame:#E0B15E}
+}
+body{
+  margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;
+  background:var(--bg);color:var(--ink);line-height:1.85;text-align:center;padding:24px;
+  font-family:-apple-system,BlinkMacSystemFont,"PingFang TC","Microsoft JhengHei","Hiragino Sans GB",sans-serif;
+}
+h1{font-family:"Songti TC","Noto Serif TC",serif;letter-spacing:6px;font-size:1.7rem;margin:.8em 0 .3em}
+p{color:var(--muted);margin:.3em 0}
+a{color:var(--accent)}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
+svg{width:72px;height:72px}
+</style>
+</head>
+<body>
+<main>
+  <svg viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+    <path d="M32 6c8.4 10 12.6 16.8 12.6 23.5 0 7.6-5.6 13.1-12.6 13.1s-12.6-5.5-12.6-13.1C19.4 22.8 23.6 16 32 6z" fill="var(--flame)"/>
+    <path d="M32 18.5c4 5 6.1 8.4 6.1 11.8 0 3.8-2.7 6.6-6.1 6.6s-6.1-2.8-6.1-6.6c0-3.4 2.1-6.8 6.1-11.8z" fill="var(--bg)"/>
+    <path d="M14.5 47h35c-1.5 6.5-8.4 10.7-17.5 10.7S16 53.5 14.5 47z" fill="var(--accent)"/>
+  </svg>
+  <h1>找不到頁面</h1>
+  <p>您要找的頁面不存在或已移動。</p>
+  <p><a href="/">回到首頁</a></p>
+</main>
+</body>
+</html>
