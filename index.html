@@ -3,13 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>臨終助念念佛 App｜常明燈 Lasting Lamp · 免費無廣告 · 完全離線</title>
-<meta name="description" content="常明燈是純公益、完全免費的臨終助念念佛 App：佛號與《心經》直式排版逐字亮起，連續助念 8 小時，防誤觸鎖定，木魚、引磬等法器音，完全離線、無廣告、不收集任何資料。即將上架 App Store，歡迎先了解功能與隱私承諾。">
-<meta name="robots" content="index,follow">
+<title>臨終助念念佛 App · 免費離線念佛機｜常明燈 Lasting Lamp</title>
+<meta name="description" content="常明燈是純公益、完全免費的臨終助念念佛 App：南無阿彌陀佛聖號與《心經》直式經文逐字亮起，可整夜連續播放，防誤觸鎖定，完全離線、無廣告、不收集任何資料。">
+<meta name="robots" content="index,follow,max-image-preview:large">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="常明燈 Lasting Lamp">
-<meta property="og:title" content="臨終助念念佛 App｜常明燈 Lasting Lamp">
-<meta property="og:description" content="純公益、完全免費、無廣告、完全離線的臨終助念念佛 App。經文逐字亮起，連續助念 8 小時，一切資料僅存於本機。">
+<meta property="og:title" content="常明燈 Lasting Lamp｜臨終助念念佛 App">
+<meta property="og:description" content="純公益、完全免費、無廣告、完全離線的臨終助念念佛 App。經文逐字亮起，可整夜連續播放，一切資料僅存於本機。">
 <meta property="og:locale" content="zh_TW">
 <meta property="og:url" content="https://jaydencj.github.io/changminglamp-site/">
 <meta property="og:image" content="https://jaydencj.github.io/changminglamp-site/og-image.png">
@@ -33,10 +33,30 @@
   "applicationCategory": "LifestyleApplication",
   "operatingSystem": "iOS",
   "url": "https://jaydencj.github.io/changminglamp-site/",
-  "description": "純公益、完全免費的臨終助念念佛 App。南無阿彌陀佛、阿彌陀佛兩種佛號，以及《心經》，直式排版逐字亮起，連續播放最長 8 小時，完全離線運作，不收集任何資料。",
-  "inLanguage": ["zh-Hant", "zh-Hans"],
+  "description": "純公益、完全免費的臨終助念念佛 App。「南無阿彌陀佛」六字聖號與《心經》，直式經文逐字隨誦亮起，提供 1、2、4、8、12 小時與不限時檔位，可整夜連續播放，完全離線運作，不收集任何資料。",
+  "inLanguage": ["zh-Hant", "zh-Hans", "ja", "ko", "vi"],
   "isAccessibleForFree": true,
-  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "TWD" }
+  "featureList": [
+    "佛號與《心經》",
+    "逐字隨誦亮起",
+    "彈性誦念時長",
+    "防誤觸鎖定",
+    "法器背景音",
+    "開示、回向與七七佛事",
+    "紀念摯愛"
+  ],
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "TWD", "category": "free" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://jaydencj.github.io/changminglamp-site/#website",
+  "name": "常明燈",
+  "alternateName": "Lasting Lamp",
+  "url": "https://jaydencj.github.io/changminglamp-site/",
+  "inLanguage": "zh-Hant"
 }
 </script>
 <style>
@@ -95,6 +115,9 @@ section h2{
 .btn.primary:hover,.btn.primary:active{background:var(--btn-hover);border-color:var(--btn-hover)}
 .btn.ghost{color:var(--accent)}
 .btn.ghost:hover,.btn.ghost:active{background:var(--bg-soft)}
+.hero .scene{color:var(--muted);font-size:.98rem;max-width:30em;margin:.4em auto 0;text-wrap:balance}
+.about p{max-width:36em;margin:.8em auto}
+.about .fine{color:var(--muted);font-size:.92rem;text-align:center;margin-top:1.4em}
 </style>
 </head>
 <body>
@@ -130,6 +153,7 @@ section h2{
       <h1 id="hero-title">常明燈</h1>
       <p class="en">Lasting Lamp</p>
       <p class="tagline">臨終助念念佛 App。願一盞常明之燈，<br class="br-wide">伴摯愛之人安詳往生，也伴守候的家人安心相送。</p>
+      <p class="scene">為深夜的病房、等待助念團到達的空檔而設計——無需網路，開啟即可播放聖號，陪伴最難的時刻。</p>
       <!-- [html-validate-disable-next no-redundant-role -- Safari/VoiceOver 對 list-style:none 的清單會移除列表語義，須以 role="list" 顯式保留] -->
       <ul class="pills" role="list">
         <li>純公益</li>
@@ -139,6 +163,7 @@ section h2{
         <li>不收集任何資料</li>
       </ul>
       <p class="store-note">即將上架 App Store，上架後即可免費下載</p>
+      <p class="store-note"><a href="support.html">先行了解使用方式與常見問題</a></p>
     </section>
 
     <section aria-labelledby="features-title">
@@ -147,36 +172,48 @@ section h2{
       <ul class="features" role="list">
         <li>
           <h3>佛號與《心經》</h3>
-          <p>南無阿彌陀佛、阿彌陀佛兩種佛號，以及《心經》，介面支援繁體與簡體。</p>
+          <p>「南無阿彌陀佛」六字聖號循環播放，另收錄《心經》供日常持誦；聖號誦念提供繁體、簡體、日、韓、越語音源與字幕，《心經》提供繁、簡、日語。</p>
         </li>
         <li>
           <h3>逐字隨誦亮起</h3>
           <p>直式經文排版，佛號逐字隨誦亮起，眼到、耳到、心到。</p>
         </li>
         <li>
-          <h3>連續助念 8 小時</h3>
-          <p>可設定誦念時間，連續播放最長 8 小時不間斷。</p>
+          <h3>彈性誦念時長</h3>
+          <p>提供 1、2、4、8、12 小時與不限時檔位，可整夜連續播放不間斷。</p>
         </li>
         <li>
           <h3>防誤觸鎖定</h3>
-          <p>安心將手機放於枕邊，長按 3 秒即可解除鎖定。</p>
+          <p>安心將手機放於枕邊，螢幕鎖定防止誤觸；長按 3 秒即可解除。</p>
         </li>
         <li>
           <h3>法器背景音</h3>
-          <p>木魚、引磬、鐘等法器音效，可自由疊加於佛號之上。</p>
+          <p>木魚、引磬、鐘三種法器音，可自由疊加於聖號之上，益增攝心。</p>
+        </li>
+        <li>
+          <h3>開示、回向與七七佛事</h3>
+          <p>內建臨終開示文與通行回向偈；記下往生日期，即可推算頭七至七七、百日、對年，佛事當天提供逐步引導。</p>
         </li>
         <li>
           <h3>紀念摯愛</h3>
-          <p>可為摯愛之人輸入姓名、設定照片，一切僅保存於您的裝置。</p>
+          <p>可為摯愛之人留下姓名與照片，讓思念有所安放；一切僅保存於您的手機。</p>
         </li>
       </ul>
+    </section>
+
+    <section class="about" aria-labelledby="about-title">
+      <h2 id="about-title">認識臨終助念</h2>
+      <p>助念，是佛教傳統中的一種善終儀式：在臨終者身旁稱念阿彌陀佛聖號，陪伴臨終者安住正念。依淨土宗傳統與民間習俗，助念多自臨終前開始，並於往生後持續八至十二小時，由家屬輪班誦念，或請助念團體前來協助。</p>
+      <p>人力有時而歇，願佛號相續不斷。深夜、醫院病房，或等待助念團到達的空檔，家屬可先以常明燈播放聖號、隨聲誦念，多一分安定，少一分慌亂。常明燈如同一部隨身的離線念佛機，是助念的輔助，不能代替陪伴，只願守護陪伴；如有需要，請同時聯絡助念團體與安寧療護團隊。</p>
+      <p>無論您是否為佛教徒，都歡迎使用常明燈。願亡者安詳，生者安心。</p>
+      <p class="fine">本 App 不隸屬於任何寺院或教派，不宣稱任何宗教功效，亦不替代專業臨終關懷。</p>
     </section>
 
     <section aria-labelledby="privacy-title">
       <h2 id="privacy-title">隱私承諾</h2>
       <div class="promise">
         <p class="big"><strong>不收集、不上傳、<span class="nb">不分享</span></strong>任何個人資料。</p>
-        <p>沒有帳號、沒有廣告、沒有分析統計、沒有第三方追蹤。所有音聲與經文皆內建於 App 中，無需網路即可使用；您設定的姓名與照片永不離開您的手機。</p>
+        <p>沒有帳號、沒有廣告、沒有分析統計、沒有第三方追蹤。所有音聲與經文皆內建於 App 中，無需網路即可使用；您為摯愛設定的姓名與照片，永不離開您的手機。讓這段時光，只屬於您與摯愛。</p>
         <div class="actions">
           <a class="btn primary" href="support.html">查看說明與常見問題</a>
           <a class="btn ghost" href="privacy.html">閱讀完整隱私政策</a>
